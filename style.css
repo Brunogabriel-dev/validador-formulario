@@ -3,13 +3,19 @@ body {
 }
 .screen {
   display: flex;
+  height: 100vw;
 }
 .leftside {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leftside img {
-  width: 80%;
+  max-width: 500px;
+  height: auto;
 }
 .rightside {
-  width: 300px;
+  width: 400px;
+  background-color: #ddd;
 }

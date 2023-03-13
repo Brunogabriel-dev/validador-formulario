@@ -10,11 +10,10 @@ let B7Validator = {
       let check = B7Validator.checkInput(input);
       if(check !== true) {
         send = false;
-        // exibir o erro
+        console.log(check)
       }
     }
 
-    send = false;
     if(send) {
       form.submit();
     }

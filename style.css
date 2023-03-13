@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
@@ -18,4 +21,16 @@ body {
 .rightside {
   width: 400px;
   background-color: #ddd;
+  padding: 50px;
+}
+.rightside label {
+  display: block;
+  margin-bottom: 20px;
+}
+.rightside input {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  outline: 0;
 }

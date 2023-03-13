@@ -34,7 +34,6 @@ let B7Validator = {
           case 'min':
 
           break;
-
         }
       }
     }
@@ -43,6 +42,12 @@ let B7Validator = {
   },
   showError:(input, error) => {
     input.style.borderColor = '#ff0000';
+
+    let errorElement = document.createElement('div');
+    errorElement.classList.add('error');
+    errorElement.innerHTML = error;
+
+    input.parentElement.insertBefore(errorElement, input);
   }
 };
 
